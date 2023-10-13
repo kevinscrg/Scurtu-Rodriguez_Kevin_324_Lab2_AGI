@@ -112,8 +112,8 @@ class cons():
             a = p.l[i]
             m.append([a.x]) , m.append([a.y]), m.append([1])
             mx = self.inm(mt,m)
-            x = round(mx[0][0])
-            y = round(mx[1][0])
+            x = mx[0][0]
+            y = mx[1][0]
             f = Punct(x,y)
             pf.adaug(f)
         return pf
