@@ -111,7 +111,7 @@ class cons():
 
     def main(self, d :drp):
         d.afis()
-        print("\nmatricea transformarii: \n")
+        print("\nmatricea transformarii compuse: \n")
         for i in range(3):
             print(self.mat_fin(d)[i])
         print('\n')
