@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f43010cd-9a46-4787-a46e-848c95f752cc" name="Changes" comment="pana la intersectii cu axe">
-      <change afterPath="$PROJECT_DIR$/clase/Polyg.py" afterDir="false" />
+    <list default="true" id="f43010cd-9a46-4787-a46e-848c95f752cc" name="Changes" comment="incerc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clase/Consola.py" beforeDir="false" afterPath="$PROJECT_DIR$/clase/Consola.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clase/Dreapta.py" beforeDir="false" afterPath="$PROJECT_DIR$/clase/Dreapta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clase/Matrici.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,8 @@
       <option name="presentableId" value="Default" />
       <updated>1697087934297</updated>
       <workItem from="1697087935330" duration="5045000" />
-      <workItem from="1697112292491" duration="9907000" />
+      <workItem from="1697112292491" duration="10119000" />
+      <workItem from="1697211012309" duration="1930000" />
     </task>
     <task id="LOCAL-00001" summary="pana la intersectii cu axe">
       <option name="closed" value="true" />
@@ -95,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697092981918</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="incerc">
+      <option name="closed" value="true" />
+      <created>1697124742254</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697124742255</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,10 +112,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pana la intersectii cu axe" />
-    <option name="LAST_COMMIT_MESSAGE" value="pana la intersectii cu axe" />
+    <MESSAGE value="incerc" />
+    <option name="LAST_COMMIT_MESSAGE" value="incerc" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Scurtu_Rodriguez_Kevin_324_Lab2$Consola.coverage" NAME="Consola Coverage Results" MODIFIED="1697090445518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/clase" />
-    <SUITE FILE_PATH="coverage/Scurtu_Rodriguez_Kevin_324_Lab2$main.coverage" NAME="main Coverage Results" MODIFIED="1697124514452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Scurtu_Rodriguez_Kevin_324_Lab2$main.coverage" NAME="main Coverage Results" MODIFIED="1697212901455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

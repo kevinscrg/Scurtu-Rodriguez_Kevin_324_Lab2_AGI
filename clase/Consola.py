@@ -103,11 +103,18 @@ class cons():
         except ValueError:
             print("nu ati introdus date coerente. ")
 
+
+    def Mat_omog(self, d:drp):
+        mt = self.mat_fin(d)
+
+
+
     def main(self, d :drp):
         d.afis()
-        print("matrice transformarii: ")
+        print("\nmatricea transformarii: \n")
         for i in range(3):
             print(self.mat_fin(d)[i])
+        print('\n')
 
 
 

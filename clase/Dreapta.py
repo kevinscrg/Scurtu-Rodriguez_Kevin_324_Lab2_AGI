@@ -13,10 +13,21 @@ class drp:
         return Punct(0,(-1)*self.c/self.b)
 
     def M_trans(self):
-        mt = [[1,0,(-1)*self.c/(2*self.a)], [0,1,(-1)*self.c/(2*self.b)], [0,0,1]];
+        if self.a!=0 and self.b !=0:
+            mt = [[1,0,(-1)*self.c/(2*self.a)], [0,1,(-1)*self.c/(2*self.b)], [0,0,1]]
+        elif self.a!=0:
+            mt = [[1, 0, (-1) * self.c / (self.a)], [0, 1, 0], [0, 0, 1]]
+        elif self.b !=0:
+            mt = [[1, 0, 0], [0, 1, (-1) * self.c / (self.b)], [0, 0, 1]]
         return mt
+
     def M_trans_i(self):
-        mt = [[1, 0, self.c / (2 * self.a)], [0, 1, self.c / (2 * self.b)], [0, 0, 1]];
+        if self.a != 0 and self.b != 0:
+            mt = [[1, 0, self.c / (2 * self.a)], [0, 1, self.c / (2 * self.b)], [0, 0, 1]]
+        elif self.a != 0:
+            mt = [[1, 0,  self.c / (self.a)], [0, 1, 0], [0, 0, 1]]
+        elif self.b != 0:
+            mt = [[1, 0, 0], [0, 1, self.c / (self.b)], [0, 0, 1]]
         return mt
     def M_rot(self):
         t = (-1)*self.a/self.b
@@ -31,34 +42,35 @@ class drp:
         return mt
 
     def M_ref(self):
-        mt = [[1,0,0],[0,-1,0],[0,0,1]]
+        return [[1,0,0],[0,-1,0],[0,0,1]]
 
     def afis(self):
         if self.c == 0:
-            print("dreapta trece prin origine.")
+            print("\ndreapta trece prin origine.")
         else:
-            print("matrice de translatie (prin origine): ")
+            print("\nmatricea de translatie (prin origine): \n")
             for i in range(3):
-                print(self.M_trans[i])
+                print(self.M_trans()[i])
         if self.a == 0:
-            print("dreapta este orizontala")
+            print("\ndreapta este orizontala")
         elif self.b == 0:
-            print("dreapta este verticala")
+            print("\ndreapta este verticala")
         else:
-            print("matrice de rotatie (se suprapune cu OX): ")
+            print("\nmatricea de rotatie (se suprapune cu OX): \n")
             for i in range(3):
-                print(self.M_rot[i])
-        print("matrice de reflexie: ")
+                print(self.M_rot()[i])
+        print("\nmatricea de reflexie:\n ")
         for i in range(3):
-            print(self.M_ref[i])
+            print(self.M_ref()[i])
         if self.a !=0 and self.b !=0:
-            print("matrice de rotatie (directia initiala): ")
+            print("\nmatricea de rotatie (directia initiala): \n")
             for i in range(3):
-                print(self.M_rot_i[i])
+                print(self.M_rot_i()[i])
         if self.c !=0:
-            print("matrice de translatie (pozitia initiala): ")
+            print("\nmatricea de translatie (pozitia initiala): \n")
             for i in range(3):
-                print(self.M_trans_i[i])
+                print(self.M_trans_i()[i])
+
 
 
 
