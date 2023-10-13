@@ -57,7 +57,7 @@ class cons():
                 b = float(input("y= "))
                 x = Punct(a,b)
                 p.adaug(x)
-            print(p)
+            return p
 
 
         except KeyError:
@@ -104,17 +104,34 @@ class cons():
             print("nu ati introdus date coerente. ")
 
 
-    def Mat_omog(self, d:drp):
+    def Mat_omog(self, d:drp, p :poligon):
         mt = self.mat_fin(d)
+        pf = poligon([])
+        for i in range(len(p.l)):
+            m = []
+            a = p.l[i]
+            m.append([a.x]) , m.append([a.y]), m.append([1])
+            mx = self.inm(mt,m)
+            x = round(mx[0][0])
+            y = round(mx[1][0])
+            f = Punct(x,y)
+            pf.adaug(f)
+        return pf
+
+
+
 
 
 
     def main(self, d :drp):
+        p = self.pol()
         d.afis()
         print("\nmatricea transformarii compuse: \n")
         for i in range(3):
             print(self.mat_fin(d)[i])
         print('\n')
+        print("Poligonul rezultat cu vf pe punctele: \n")
+        print(self.Mat_omog(d,p))
 
 
 
